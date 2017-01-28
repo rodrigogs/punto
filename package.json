@@ -1,0 +1,9 @@
+{
+  "name": "punto",
+  "version": "0.0.0",
+  "description": "Bidirectional dot notation conversion.",
+  "main": "index.js",
+  "repository": "https://github.com/rodrigogs/punto.git",
+  "author": "Rodrigo Gomes da Silva <rodrigo.smscom@gmail.com>",
+  "license": "BSD 2-Clause"
+}
