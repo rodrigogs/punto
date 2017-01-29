@@ -7,7 +7,6 @@
 [![npm](https://img.shields.io/npm/dt/punto.svg)](https://www.npmjs.com/package/punto)
 [![npm version](https://badge.fury.io/js/punto.svg)](https://badge.fury.io/js/punto)
 [![Bower version](https://badge.fury.io/bo/punto.svg)](https://badge.fury.io/bo/punto)
-[![Inline docs](http://inch-ci.org/github/rodrigogs/punto.svg?branch=master)](http://inch-ci.org/github/rodrigogs/punto)
 
 Bidirectional dot notation conversion.
 
