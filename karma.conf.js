@@ -56,8 +56,8 @@ module.exports = function (config) {
 
   if (process.env.IP && process.env.PORT) {
     configuration.hostname = process.env.IP;
-    configuration.port = process.env.PORT
-    configuration.runnerPort = 0
+    configuration.port = process.env.PORT;
+    configuration.runnerPort = 0;
   }
 
   config.set(configuration);

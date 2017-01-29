@@ -18,9 +18,15 @@
   }
 
   punto.get = function (object, property) {
-    if (!object) return null;
-    if (typeof property !== 'string') return object[property];
-    if (object.hasOwnProperty(property)) return object[property];
+    if (!object) {
+      return null;
+    }
+    if (typeof property !== 'string') {
+      return object[property];
+    }
+    if (object.hasOwnProperty(property)) {
+      return object[property];
+    }
 
     var propChain = property.split('.');
     var currentObjProp = object;
@@ -45,7 +51,9 @@
   };
 
   punto.set = function (object, property, value) {
-    if (!object) return;
+    if (!object) {
+      return;
+    }
 
     var propChain = (property || '').split('.');
     var currentObjProp = object;
@@ -65,7 +73,9 @@
         if (last) {
           currentObjProp[prop] = value;
         } else {
-          if (!isObject(currentObjProp[prop])) currentObjProp[prop] = {};
+          if (!isObject(currentObjProp[prop])) {
+            currentObjProp[prop] = {};
+          }
           currentObjProp = currentObjProp[prop];
         }
       }
@@ -77,7 +87,9 @@
     for (var i = 0, len = props.length; i < len; i++) {
       var prop = props[i];
       var value = object[prop];
-      if (prop.indexOf('.') === -1) continue;
+      if (prop.indexOf('.') === -1) {
+        continue;
+      }
       delete object[prop];
       punto.set(object, prop, value);
     }
