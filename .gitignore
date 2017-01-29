@@ -37,3 +37,4 @@ jspm_packages
 .node_repl_history
 /punto.iml
 /.idea/
+/bower_components/

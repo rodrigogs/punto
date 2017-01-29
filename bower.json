@@ -1,0 +1,37 @@
+{
+  "name": "punto",
+  "version": "1.0.0",
+  "description": "Bidirectional dot notation conversion.",
+  "homepage": "https://github.com/rodrigogs/punto",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rodrigogs/punto.git"
+  },
+  "authors": [
+    "Rodrigo Gomes da Silva <rodrigo.smscom@gmail.com>"
+  ],
+  "main": [
+    "build/punto.js"
+  ],
+  "keywords": [
+    "dot",
+    "notation",
+    "dotnotation",
+    "conversion",
+    "object",
+    "string",
+    "hybrid",
+    "bidirectional"
+  ],
+  "license": "BSD-2-Clause",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "assert": "^0.1.0"
+  }
+}
