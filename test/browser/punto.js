@@ -19,6 +19,7 @@ describe('punto', function () {
   var loadDefaults = function () {
     object = {
       'first.second': 'dotnotatedvalue',
+      'a.b': 'c',
       normal: {
         property: 'normalvalue'
       }
@@ -38,6 +39,24 @@ describe('punto', function () {
 
     assert.equal(v1, 'dotnotatedvalue');
     assert.equal(v2, 'normalvalue');
+
+    done();
+  });
+
+  it('should set an object property value from a dot notated string', function (done) {
+    punto.set(object, 'first.second', 'myvalue');
+
+    assert.equal(object.first.second, 'myvalue');
+
+    done();
+  });
+
+  it('should normalize all dot notades properties in an object', function (done) {
+    punto.normalize(object);
+
+    assert.equal(object.first.second, 'dotnotatedvalue');
+    assert.equal(object.a.b, 'c');
+    assert.equal(object['first.second'], undefined);
 
     done();
   });
