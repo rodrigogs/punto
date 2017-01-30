@@ -5,10 +5,10 @@ module.exports = function (config) {
     frameworks: ['mocha'],
     files: [
       'bower_components/mocha/mocha.css',
-      'punto.js',
+      'Punto.js',
       'bower_components/assert/assert.js',
       'bower_components/mocha/mocha.js',
-      'test/browser/punto.js',
+      'test/browser/Punto.js',
       {
         pattern: 'test/browser/fixture/*',
         included: false,

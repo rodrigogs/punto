@@ -11,7 +11,7 @@ const stylish = require('jshint-stylish');
 const jsdocConfig = require('./jsdoc-config.json');
 
 const mainFiles = [
-  'punto.js'
+  'Punto.js'
 ];
 
 gulp.task('init', () => {
@@ -24,7 +24,7 @@ gulp.task('build', done => {
 
 gulp.task('build-raw', () => {
   return gulp.src(mainFiles)
-    .pipe(plugins.concat('punto.js'))
+    .pipe(plugins.concat('Punto.js'))
     .pipe(banner())
     .pipe(plugins.stripDebug())
     .pipe(gulp.dest('build'));
@@ -35,7 +35,7 @@ gulp.task('build-min', () => {
     .pipe(plugins.uglify({
       preserveComments: 'some'
     }))
-    .pipe(plugins.concat('punto-min.js'))
+    .pipe(plugins.concat('Punto-min.js'))
     .pipe(plugins.stripDebug())
     .pipe(gulp.dest('build'));
 });
@@ -87,10 +87,10 @@ gulp.task('test-watch', done => {
 function banner() {
   let stamp = [
     '/**',
-    ' * punto.js - <%= pkg.description %>',
+    ' * Punto.js - <%= pkg.description %>',
     ' * @author <%= pkg.author.name %> <<%= pkg.author.email %>>',
     ' * @version v<%= pkg.version %>',
-    ' * @link https://github.com/punto',
+    ' * @link https://github.com/Punto',
     ' * @license BSD-2-Clause',
     ' */',
     ''

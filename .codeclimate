@@ -21,8 +21,8 @@ engines:
       Similar code:
         enabled: false
 exclude_paths:
-- "build/*"
-- "test/**"
+- 'build/*'
+- 'test/**'
 ratings:
   paths:
-  - src/**
+  - './punto.js'

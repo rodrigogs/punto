@@ -3,9 +3,9 @@
     "destination": "./docs/gen"
   },
   "templates": {
-    "systemName": "punto",
+    "systemName": "Punto",
     "footer": "<span style=\"text-align: center; width: 100%; display: block;\"><a href=\"https://github.com/rodrigogs/punto\">Github Repository</a></span>",
-    "copyright": "punto Copyright (c) 2017 Rodrigo Gomes da Silva. All rights reserved.",
+    "copyright": "Punto Copyright (c) 2017 Rodrigo Gomes da Silva. All rights reserved.",
     "includeDate": "false",
     "navType": "vertical",
     "theme": "cerulean",

@@ -1,6 +1,6 @@
 {
   "name": "punto",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Bidirectional dot notation conversion.",
   "main": "punto.js",
   "repository": "https://github.com/rodrigogs/punto.git",
@@ -39,7 +39,7 @@
     "jasmine-core": "^2.5.2",
     "jshint": "^2.9.4",
     "jshint-stylish": "^2.2.1",
-    "karma": "^1.4.0",
+    "karma": "^1.4.1",
     "karma-chrome-launcher": "^2.0.0",
     "karma-coverage": "^1.1.1",
     "karma-firefox-launcher": "^1.0.0",
