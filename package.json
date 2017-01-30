@@ -1,6 +1,6 @@
 {
   "name": "punto",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Bidirectional dot notation conversion.",
   "main": "punto.js",
   "repository": "https://github.com/rodrigogs/punto.git",
