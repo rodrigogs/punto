@@ -16,6 +16,8 @@
     return value !== null && type === 'object';
   }
 
+  var hasOwnProperty = Object.prototype.hasOwnProperty;
+
   /**
    * Creates a new Punto instance.
    *
@@ -86,7 +88,7 @@
     if (typeof property !== 'string') {
       return object[property];
     }
-    if (object.hasOwnProperty(property)) {
+    if (hasOwnProperty.call(object, property)) {
       return object[property];
     }
 
@@ -98,7 +100,7 @@
     for (var i = 0, len = propChain.length; i < len; i++) {
       last = (i + 1) === len;
       var prop = propChain[i];
-      if (!currentObjProp.hasOwnProperty(prop)) {
+      if (!hasOwnProperty.call(currentObjProp, prop)) {
         result = null;
         break;
       }
@@ -134,7 +136,7 @@
     for (var i = 0, len = propChain.length; i < len; i++) {
       last = (i + 1) === len;
       var prop = propChain[i];
-      if (!currentObjProp.hasOwnProperty(prop)) {
+      if (!hasOwnProperty.call(currentObjProp, prop)) {
         if (last) {
           currentObjProp[prop] = value;
         } else {
